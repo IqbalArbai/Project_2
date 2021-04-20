@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3E251"
+    tools:context=".MonitoringActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="13dp"
+        android:focusable="true"
+        app:cardBackgroundColor="#2A6491">
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     Welcome To \n Monitoring Page"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="22sp"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/monitor1"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="30dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            app:cardElevation="13dp"
+            app:cardCornerRadius="26dp"
+            android:focusable="true"
+            app:cardBackgroundColor="#DDDADA">
+
+
+            <LinearLayout
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/nilai_suhu"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="32sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/nilai_suhu_ideal_adalah_25_27_c"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_nilai_suhu"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:text="@string/_0"
+                        android:textSize="50sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardElevation="13dp"
+            app:cardCornerRadius="26dp"
+            android:focusable="true"
+            app:cardBackgroundColor="#DDDADA">
+
+
+            <LinearLayout
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/nilai_ph"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="32sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nilai_ph_ideal_adalah_6_7"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_nilai_ph"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:text="@string/_0"
+                        android:textSize="50sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            app:cardElevation="13dp"
+            app:cardCornerRadius="26dp"
+            android:focusable="true"
+            app:cardBackgroundColor="#DDDADA">
+
+
+            <LinearLayout
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/nilai_amonia"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="32sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nilai_amonia_ideal_adalah_1"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_nilai_amonia"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:text="@string/_00"
+                        android:textSize="45sp"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="25dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/sp_home_page"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_marginTop="22dp"
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/information"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_isiinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/silahkan_pergi_ke_menu_monitoring_jika_terdapat_nilai_parameter_yang_tidak_ideal"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

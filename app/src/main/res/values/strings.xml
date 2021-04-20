@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Project_2</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email_username">Email/Username</string>
+    <string name="password">Password</string>
+    <string name="mulai">Mulai</string>
+    <string name="silahkan_login">Silahkan Login</string>
+    <string name="silahkan_registrasi">Silahkan Registrasi</string>
+    <string name="monitor_kontrol_kolam_anda"><![CDATA[Monitor & Kontrol Kolam Anda]]></string>
+    <string name="belum_memiliki_account">belum memiliki account?</string>
+    <string name="sudah_memiliki_account">sudah memiliki account?</string>
+    <string name="information">Information!</string>
+    <string name="anda_dapat_memilih_salah_satu_opsi_pada_menu_ini_anda_dapat_memilih_monitoring_untuk_memonitor_kondisi_kolam_atau_anda_dapat_memilih_controlling_untuk_mengatur_kondisi_kolam">Anda dapat memilih salah satu opsi pada menu ini. Anda dapat memilih MONITORING untuk memonitor kondisi kolam atau Anda dapat memilih CONTROLLING untuk mengatur kondisi kolam</string>
+    <string name="todo">TODO</string>
+    <string name="masuk">Masuk</string>
+    <string name="monitoring_controlling_system"><![CDATA[Monitoring & Controlling System]]></string>
+    <string name="kolam_ikan_hias_koi">Kolam Ikan Hias Koi</string>
+    <string name="home_page">Home Page</string>
+    <string name="ini_adalah_halaman_beranda">Ini Adalah Halaman Beranda</string>
+    <string name="controlling">Controlling</string>
+    <string name="apk_v_0_0_1">Apk v.0.0.1</string>
+    <string name="controlling_page">Controlling Page</string>
+    <string name="monitoring_page">Monitoring Page</string>
+    <string name="_0">0</string>
+    <string name="nilai_amonia_ideal_adalah_1"><![CDATA[(Nilai amonia ideal adalah < 1%)]]></string>
+    <string name="nilai_amonia">Nilai Amonia:</string>
+    <string name="nilai_ph_ideal_adalah_6_7">(Nilai pH ideal adalah : 6-7)</string>
+    <string name="nilai_suhu">Nilai Suhu :</string>
+    <string name="silahkan_pergi_ke_menu_monitoring_jika_terdapat_nilai_parameter_yang_tidak_ideal">Silahkan pergi ke menu monitoring jika terdapat nilai parameter yang tidak ideal</string>
+    <string name="nilai_ph">Nilai pH :</string>
+    <string name="_00">0%</string>
+    <string name="nilai_suhu_ideal_adalah_25_27_c">(Nilai suhu ideal adalah 25-27°C)</string>
+
+</resources>

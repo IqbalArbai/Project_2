@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/koi2"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_input_register"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/sp_rectangel_root"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_username"
+            android:paddingStart="20dp"
+            android:drawableStart="@drawable/ic_username_person"
+            android:drawablePadding="20dp"
+            android:hint="@string/enter_your_email"
+            android:backgroundTint="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/v_saparator"
+            android:background="#E8E9E8"
+            android:layout_below="@id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/v_saparator"
+            android:backgroundTint="#FFF"
+            android:drawableStart="@drawable/ic_password_lock"
+            android:drawablePadding="20dp"
+            android:hint="@string/enter_your_password"
+            android:paddingStart="20dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_input_regis"
+        android:layout_below="@id/tv_title"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sp_btn_circle"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/rl_input_register"
+        android:layout_marginBottom="150dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FFEB3B"
+        android:text="@string/silahkan_registrasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        />
+
+    <TextView
+        android:layout_below="@id/btnLogin"
+        android:layout_alignParentStart="true"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#FFEB3B"
+        android:text="@string/sudah_memiliki_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
