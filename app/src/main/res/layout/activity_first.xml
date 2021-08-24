@@ -33,7 +33,7 @@
         android:gravity="center|center_horizontal|center_vertical"
         android:text="@string/monitor_kontrol_kolam_anda"
         android:textColor="#FFEB3B"
-        android:textSize="30sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

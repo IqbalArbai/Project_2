@@ -2,27 +2,35 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tutorial.project_2">
 
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Project_2">
-        <activity android:name=".ControllingActivity"></activity>
-        <activity android:name=".MonitoringActivity" />
-        <activity android:name=".FirstActivity">
+        android:theme="@style/Theme.Project_2"
+        android:name=".FireApp"> // untuk RT
+        <activity android:name="com.tutorial.project_2.ControllingActivity"></activity>
+        <activity android:name="com.tutorial.project_2.MonitoringActivity" />
+        <activity android:name="com.tutorial.project_2.FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".HomeActivity" />
-
+        <activity android:name="com.tutorial.project_2.MainActivity" />
+        <activity android:name="com.tutorial.project_2.LoginActivity" />
+        <activity android:name="com.tutorial.project_2.RegisterActivity" />
+        <activity android:name="com.tutorial.project_2.HomeActivity" />
+        <service android:name="org.eclipse.paho.android.service.MqttService" > //mqtt
+        </service>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

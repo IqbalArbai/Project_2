@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,22 +9,21 @@
     tools:context=".ControllingActivity">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/controlling_welcome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
         android:clickable="true"
         app:cardElevation="13dp"
-        app:cardCornerRadius="10dp"
         android:focusable="true"
-        app:cardBackgroundColor="#DDDADA">
-
+        app:cardBackgroundColor="#292929"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:padding="10dp"
-            android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal">
+            android:layout_height="85dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -35,9 +34,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/controlling_page"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="22sp"/>
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
 
             </LinearLayout>
@@ -49,10 +48,10 @@
                 <ImageView
                     android:layout_width="90dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/control1"
-                    android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="30dp"/>
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/control1" />
 
             </RelativeLayout>
 
@@ -60,4 +59,278 @@
 
     </androidx.cardview.widget.CardView>
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/controlling_kontrolsuhu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/controlling_welcome">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardElevation="13dp"
+            app:cardCornerRadius="26dp"
+            android:focusable="true"
+            app:cardBackgroundColor="#2A6491">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="100dp"
+                        android:text="@string/kontrol_suhu"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sw_heater"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="25dp"
+                android:text="Heater "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:gravity="center"
+                android:thumb="@drawable/sw_thumb"
+                app:track="@drawable/sw_track"
+                app:showText="true"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sw_cooler"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="200dp"
+                android:text="Cooler "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:gravity="center"
+                android:thumb="@drawable/sw_thumb"
+                app:track="@drawable/sw_track"
+                app:showText="true"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/controlling_kontrolph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/controlling_kontrolsuhu">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardElevation="13dp"
+            app:cardCornerRadius="26dp"
+            android:focusable="true"
+            app:cardBackgroundColor="#2A6491">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="100dp"
+                        android:text="Kontrol pH"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sw_pompa_asam"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="20dp"
+                android:text="Pompa \nAsam"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:gravity="center"
+                android:thumb="@drawable/sw_thumb"
+                app:track="@drawable/sw_track"
+                app:showText="true"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sw_pompa_basa"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="190dp"
+                android:text="Pompa \nBasa "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:gravity="center"
+                android:thumb="@drawable/sw_thumb"
+                app:track="@drawable/sw_track"
+                app:showText="true"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/controlling_kontrolamonia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/controlling_kontrolph">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardElevation="13dp"
+            app:cardCornerRadius="26dp"
+            android:focusable="true"
+            app:cardBackgroundColor="#2A6491">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="100dp"
+                        android:text="Kontrol Amonia"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sw_pompa_amonia"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="115dp"
+                android:text="Pompa \nAmonia"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textOff="@string/off"
+                android:textOn="@string/on"
+                android:gravity="center"
+                android:thumb="@drawable/sw_thumb"
+                app:track="@drawable/sw_track"
+                app:showText="true"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/sp_controlling_page"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_marginTop="22dp"
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/information"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_isiinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/silahkan_periksa_kembali_monitoring_page_setelah_anda_selesai_melakukan_controlling"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
